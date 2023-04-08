@@ -1,0 +1,25 @@
+History of javascript
+
+JavaScript was created in May 1995 by Brendan Eich, who was working at Netscape Communications Corporation at the time. 
+Originally called Mocha, the language was later renamed to LiveScript, and finally to JavaScript.
+
+The development of JavaScript was partly driven by the desire to add interactivity and dynamic content to websites. 
+At the time, web pages were mostly static and consisted of plain HTML, with very limited interactivity. 
+Netscape saw an opportunity to add scripting capabilities to their web browser, which would allow developers to write programs that 
+  could interact with the web page and the user.
+
+JavaScript was first introduced in Netscape Navigator 2.0 in September 1995, and quickly gained popularity as a tool for creating interactive 
+  web pages. However, the early versions of JavaScript were not very standardized, and different web browsers implemented the language in 
+  slightly different ways, which made it difficult for developers to write code that would work consistently across all platforms.
+
+To address these issues, a group of companies including Netscape, Microsoft, and Sun Microsystems formed the ECMAScript working group in 1996. 
+The goal of the group was to create a standardized version of JavaScript, which would be implemented consistently across all web browsers.
+
+In June 1997, the first version of the ECMAScript specification was released, which defined the core features of the language, including variables,
+  functions, and control structures. Since then, several new versions of the specification have been released, each adding new features and 
+  functionality to the language.
+
+Today, JavaScript is one of the most popular programming languages in the world, and is widely used for both client-side and server-side 
+  development. The language has evolved significantly since its creation, and continues to be developed and improved by the ECMAScript 
+  working group and the broader JavaScript community.
+  
