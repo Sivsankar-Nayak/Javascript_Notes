@@ -2,7 +2,7 @@ In JavaScript, there are three ways to declare a variable: using the var, let, o
 
   1.  var keyword: The var keyword is used to declare a variable in the global or local scope. 
                    Variables declared with var are function-scoped, which means that they are accessible within the function in which they are 
-                   declared or in any nested functions.
+                   declared or in any nested functions
 
 Example:
 var name = "John";
