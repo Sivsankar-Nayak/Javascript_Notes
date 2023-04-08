@@ -1,0 +1,75 @@
+Sure, here are the expected answers to the interview questions related to hoisting in JavaScript:
+
+    Q.What is hoisting in JavaScript?
+
+    A.Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during the 
+      compilation phase. This means that you can use a variable or function before it has been declared.
+
+    Q.How does hoisting work in JavaScript?
+
+    A. When the code is compiled, the JavaScript engine first goes through the code and looks for all variable and function declarations. 
+        It then sets up memory space for these declarations before executing the code. This process is called hoisting because it looks like the 
+        declarations have been moved to the top of the code, even though they haven't really moved.
+
+    Q.What is the difference between function declaration and function expression in terms of hoisting?
+
+    A.Function declarations are hoisted along with variable declarations to the top of their respective scopes, so they can be called anywhere in the scope. Function expressions, on the other hand, are not hoisted and cannot be called until after they are defined.
+
+    Q.What is the difference between var, let, and const in terms of hoisting?
+
+    A.var declarations are hoisted to the top of their scope and initialized with a value of undefined. 
+      let and const declarations are also hoisted to the top of their scope, but they are not initialized, 
+      so if you try to access them before they are declared, you will get a ReferenceError.
+
+   Q. What is the output of the following code?
+    
+      console.log(myVariable); // Output: undefined
+      var myVariable = "hello world";
+    
+   A.The output is undefined, because the var declaration of myVariable is hoisted to the top of its scope and initialized with a 
+      value of undefined, before the console.log statement is executed.
+      
+   Q.What is the output of the following code?   
+      sayHello(); // Output: "hello"
+      function sayHello() {
+        console.log("hello");
+      }
+
+      sayGoodbye(); // TypeError: sayGoodbye is not a function
+      var sayGoodbye = function() {
+        console.log("goodbye");
+      }
+      
+    A.The output of the first console.log statement is "hello", because function declarations are hoisted along with variable declarations to the 
+      top of their respective scopes. The output of the second sayGoodbye() statement is a TypeError, because function expressions are not hoisted 
+      and cannot be called until after they are defined.
+      
+    Q.What are some potential issues that can arise from hoisting?
+
+    A.Hoisting can be confusing and lead to unexpected behavior, especially if you are not aware of the rules for hoisting. 
+      If you rely too much on hoisting, your code may become difficult to understand and maintain.
+
+    Q.How can you avoid hoisting-related issues in your code?
+
+    A.To avoid hoisting-related issues, it's best to declare your variables and functions before using them, rather than relying on hoisting. 
+      This makes your code more predictable and easier to understand.
+
+    Q.Is hoisting unique to JavaScript, or does it exist in other programming languages?
+
+    A.Hoisting is unique to JavaScript, as it is a behavior of the JavaScript engine rather than a feature of the language itself.
+
+    Q.Can you give an example of when hoisting might be useful in JavaScript code?
+
+    A.Hoisting can be useful in situations where you need to declare a variable or function inside a block of code, but still be able to use it 
+      later on in the code. For example, you might declare a variable inside an if statement, but still need to use it outside the statement. 
+      In this case, hoisting ensures that the variable is available in
+      Sure, here's an example of when hoisting might be useful in JavaScript code:
+              if (condition) {
+          var myVar = "hello";
+        }
+
+        console.log(myVar); // Output: "hello"
+        
+      In this example, the myVar variable is declared inside an if statement, but because of hoisting, it is still accessible outside of the block 
+      of code where it was declared. If hoisting didn't exist, myVar would not be accessible outside of the if statement and the console.log 
+      statement would throw a ReferenceError.
